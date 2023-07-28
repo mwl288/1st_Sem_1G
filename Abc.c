@@ -3,9 +3,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Áßº¹ Ã¼Å© ÇÔ¼ö
-// Áßº¹ °ªÀÌ ¾ø´Ù¸é 0À» return
-// Áßº¹ °ªÀÌ ÀÖ´Ù¸é Ã¼Å©¸¦ ÁßÁöÇÏ°í 1À» return
+// 3rd Project
+// ì¤‘ë³µ ì²´í¬ í•¨ìˆ˜
+// ì¤‘ë³µ ê°’ì´ ì—†ë‹¤ë©´ 0ì„ return
+// ì¤‘ë³µ ê°’ì´ ìžˆë‹¤ë©´ ì²´í¬ë¥¼ ì¤‘ì§€í•˜ê³  1ì„ return
 int check_duplicate(int arr[], int size, int num)
 {
     int i;
@@ -27,20 +28,20 @@ int main()
 {
     int m = 0;
     printf("******************************\n");
-    printf("<Áß°£ÇÁ·ÎÁ§Æ®2>\n");
-    printf("ÇÐ¹ø : 202320755,  ÀÌ¸§ : ÀÌ¹Î¿ì\n\n");
-    printf("¹éÈ­Á¡¿¡¼­ ¹°°ÇÀ» ±¸¸ÅÇÏ½Ê½Ã¿À. \n\n");
-    printf("TVÀÇ °¡°ÝÀº 20¸¸¿øÀÌ¸ç ÀÀ¸ð ±âÈ¸´Â 10¹ø ÁÖ¾îÁý´Ï´Ù.\n");
-    printf("³ÃÀå°íÀÇ °¡°ÝÀº 10¸¸¿øÀÌ¸ç ÀÀ¸ð ±âÈ¸´Â 5¹ø ÁÖ¾îÁý´Ï´Ù.\n");
-    printf("Ã»¼Ò±âÀÇ °¡°ÝÀº 5¸¸¿øÀÌ¸ç ÀÀ¸ð ±âÈ¸´Â 2¹ø ÁÖ¾îÁý´Ï´Ù.\n");
-    printf("¿ÀºìÀÇ °¡°ÝÀº 1¸¸¿øÀÌ¸ç ÀÀ¸ð ±âÈ¸´Â 1¹ø ÁÖ¾îÁý´Ï´Ù.\n");
+    printf("<ì¤‘ê°„í”„ë¡œì íŠ¸2>\n");
+    printf("í•™ë²ˆ : 202320755,  ì´ë¦„ : ì´ë¯¼ìš°\n\n");
+    printf("ë°±í™”ì ì—ì„œ ë¬¼ê±´ì„ êµ¬ë§¤í•˜ì‹­ì‹œì˜¤. \n\n");
+    printf("TVì˜ ê°€ê²©ì€ 20ë§Œì›ì´ë©° ì‘ëª¨ ê¸°íšŒëŠ” 10ë²ˆ ì£¼ì–´ì§‘ë‹ˆë‹¤.\n");
+    printf("ëƒ‰ìž¥ê³ ì˜ ê°€ê²©ì€ 10ë§Œì›ì´ë©° ì‘ëª¨ ê¸°íšŒëŠ” 5ë²ˆ ì£¼ì–´ì§‘ë‹ˆë‹¤.\n");
+    printf("ì²­ì†Œê¸°ì˜ ê°€ê²©ì€ 5ë§Œì›ì´ë©° ì‘ëª¨ ê¸°íšŒëŠ” 2ë²ˆ ì£¼ì–´ì§‘ë‹ˆë‹¤.\n");
+    printf("ì˜¤ë¸ì˜ ê°€ê²©ì€ 1ë§Œì›ì´ë©° ì‘ëª¨ ê¸°íšŒëŠ” 1ë²ˆ ì£¼ì–´ì§‘ë‹ˆë‹¤.\n");
     
-    printf("\n´ç½ÅÀÇ ÇöÀç º¸À¯ ÀÚ±ÝÀº?(x¸¸¿ø) : ");  //  ÇÁ·Î±×·¥ ¾È³» ¸Þ½ÃÁö
+    printf("\në‹¹ì‹ ì˜ í˜„ìž¬ ë³´ìœ  ìžê¸ˆì€?(xë§Œì›) : ");  //  í”„ë¡œê·¸ëž¨ ì•ˆë‚´ ë©”ì‹œì§€
     scanf("%d", &m);
     while(m < 0 || m > 500)
     {
-        printf("Àß¸øµÈ ±Ý¾×ÀÔ´Ï´Ù. 0~500¸¸¿ø ÀÌÇÏÀÇ ±Ý¾×À» ÀÔ·ÂÇÏ¼¼¿ä.\n");
-        printf("\n´ç½ÅÀÇ ÇöÀç º¸À¯ ÀÚ±ÝÀº?(x¸¸¿ø) : "); 
+        printf("ìž˜ëª»ëœ ê¸ˆì•¡ìž…ë‹ˆë‹¤. 0~500ë§Œì› ì´í•˜ì˜ ê¸ˆì•¡ì„ ìž…ë ¥í•˜ì„¸ìš”.\n");
+        printf("\në‹¹ì‹ ì˜ í˜„ìž¬ ë³´ìœ  ìžê¸ˆì€?(xë§Œì›) : "); 
         scanf("%d", &m);
     }
     
@@ -52,38 +53,38 @@ int main()
 
     while(cou != 5)
     {
-        printf("\n¹«¾ùÀ» ±¸¸ÅÇÏ½Ã°Ú½À´Ï±î?\n");
-        printf("1.TV   2.³ÃÀå°í   3.Ã»¼Ò±â   4.¿Àºì  5.±¸ÀÔÀ» ¸ØÃá´Ù \n");  //  "¹°°Ç ±¸ÀÔ ¸Þ´º"
+        printf("\në¬´ì—‡ì„ êµ¬ë§¤í•˜ì‹œê² ìŠµë‹ˆê¹Œ?\n");
+        printf("1.TV   2.ëƒ‰ìž¥ê³    3.ì²­ì†Œê¸°   4.ì˜¤ë¸  5.êµ¬ìž…ì„ ë©ˆì¶˜ë‹¤ \n");  //  "ë¬¼ê±´ êµ¬ìž… ë©”ë‰´"
         scanf("%d", &cou);
 
-        //  1~4 ¸Þ´º ¼±ÅÃ ½Ã, °¢ ¹°°ÇÀ» A¶ó ÇÏ¸é "³»°¡ ±¸¸ÅÇÒ AÀÇ °³¼ö´Â? : " Ãâ·Â ÀÌÈÄ "ÀÜµ·Àº n¸¸¿øÀÔ´Ï´Ù" Ãâ·Â
+        //  1~4 ë©”ë‰´ ì„ íƒ ì‹œ, ê° ë¬¼ê±´ì„ Aë¼ í•˜ë©´ "ë‚´ê°€ êµ¬ë§¤í•  Aì˜ ê°œìˆ˜ëŠ”? : " ì¶œë ¥ ì´í›„ "ìž”ëˆì€ në§Œì›ìž…ë‹ˆë‹¤" ì¶œë ¥
     
         switch (cou)
         {
         case 1:
         
-            printf("\n³»°¡ ±¸¸ÅÇÒ TVÀÇ °³¼ö´Â? : ");
+            printf("\në‚´ê°€ êµ¬ë§¤í•  TVì˜ ê°œìˆ˜ëŠ”? : ");
             scanf("%d", &n);
 
             ex_m = ex;
             ex = ex - (n * 20);
 
-            //  ÀÜµ·À» ÃÊ°úÇÏ¿© ±¸¸Å ½Ã "º¸À¯ÇÑ ÀÚ±ÝÀ» %d¸¸¿ø¸¸Å­ ÃÊ°úÇÏ¿´½À´Ï´Ù." Ãâ·Â
+            //  ìž”ëˆì„ ì´ˆê³¼í•˜ì—¬ êµ¬ë§¤ ì‹œ "ë³´ìœ í•œ ìžê¸ˆì„ %dë§Œì›ë§Œí¼ ì´ˆê³¼í•˜ì˜€ìŠµë‹ˆë‹¤." ì¶œë ¥
             if (ex < 0)
             {
-                printf("º¸À¯ÇÑ ÀÚ±ÝÀ» %d¸¸¿ø¸¸Å­ ÃÊ°úÇÏ¿´½À´Ï´Ù.\n", abs(ex));
+                printf("ë³´ìœ í•œ ìžê¸ˆì„ %dë§Œì›ë§Œí¼ ì´ˆê³¼í•˜ì˜€ìŠµë‹ˆë‹¤.\n", abs(ex));
                 if ( ex_m < 20 )
                 {
-                    printf("ÇöÀç ÀÜµ·Àº %d¸¸¿øÀÌ¸ç, TV´Â ±¸¸ÅÇÒ ¼ö ¾ø½À´Ï´Ù.", ex_m);
+                    printf("í˜„ìž¬ ìž”ëˆì€ %dë§Œì›ì´ë©°, TVëŠ” êµ¬ë§¤í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.", ex_m);
                 }
                 else
                 {
-                    printf("ÇöÀç ÀÜµ·Àº %d¸¸¿øÀÌ¸ç, TV´Â %d ÀÌÇÏ·Î ±¸¸ÅÇÒ ¼ö ÀÖ½À´Ï´Ù.", ex_m, ex_m/20);
+                    printf("í˜„ìž¬ ìž”ëˆì€ %dë§Œì›ì´ë©°, TVëŠ” %d ì´í•˜ë¡œ êµ¬ë§¤í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.", ex_m, ex_m/20);
                 }
             }
             else
             {
-                printf("ÀÜµ·Àº %d¸¸¿ø ÀÔ´Ï´Ù.\n", ex);
+                printf("ìž”ëˆì€ %dë§Œì› ìž…ë‹ˆë‹¤.\n", ex);
                 lot_num += n * 10;
             }
 
@@ -91,7 +92,7 @@ int main()
         
         case 2:
         
-            printf("\n³»°¡ ±¸¸ÅÇÒ ³ÃÀå°íÀÇ °³¼ö´Â? : ");
+            printf("\në‚´ê°€ êµ¬ë§¤í•  ëƒ‰ìž¥ê³ ì˜ ê°œìˆ˜ëŠ”? : ");
             scanf("%d", &n);
 
             ex_m = ex;
@@ -99,19 +100,19 @@ int main()
 
             if (ex < 0)
             {
-                printf("º¸À¯ÇÑ ÀÚ±ÝÀ» %d¸¸¿ø¸¸Å­ ÃÊ°úÇÏ¿´½À´Ï´Ù.\n", abs(ex));
+                printf("ë³´ìœ í•œ ìžê¸ˆì„ %dë§Œì›ë§Œí¼ ì´ˆê³¼í•˜ì˜€ìŠµë‹ˆë‹¤.\n", abs(ex));
                 if (ex_m < 10)
                 {
-                    printf("ÇöÀç ÀÜµ·Àº %d¸¸¿øÀÌ¸ç, ³ÃÀå°í´Â ±¸¸ÅÇÒ ¼ö ¾ø½À´Ï´Ù.", ex_m);
+                    printf("í˜„ìž¬ ìž”ëˆì€ %dë§Œì›ì´ë©°, ëƒ‰ìž¥ê³ ëŠ” êµ¬ë§¤í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.", ex_m);
                 }
                 else
                 {
-                    printf("ÇöÀç ÀÜµ·Àº %d¸¸¿øÀÌ¸ç, ³ÃÀå°í´Â %d ÀÌÇÏ·Î ±¸¸ÅÇÒ ¼ö ÀÖ½À´Ï´Ù.", ex_m, ex_m / 10);
+                    printf("í˜„ìž¬ ìž”ëˆì€ %dë§Œì›ì´ë©°, ëƒ‰ìž¥ê³ ëŠ” %d ì´í•˜ë¡œ êµ¬ë§¤í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.", ex_m, ex_m / 10);
                 }
             }
             else
             {
-                printf("ÀÜµ·Àº %d¸¸¿ø ÀÔ´Ï´Ù.\n", ex);
+                printf("ìž”ëˆì€ %dë§Œì› ìž…ë‹ˆë‹¤.\n", ex);
                 lot_num += n * 5;
             }
 
@@ -119,7 +120,7 @@ int main()
         
         case 3:
         
-            printf("\n³»°¡ ±¸¸ÅÇÒ Ã»¼Ò±âÀÇ °³¼ö´Â? : ");
+            printf("\në‚´ê°€ êµ¬ë§¤í•  ì²­ì†Œê¸°ì˜ ê°œìˆ˜ëŠ”? : ");
             scanf("%d", &n);
 
             ex_m = ex;
@@ -127,19 +128,19 @@ int main()
 
             if (ex < 0)
             {
-                printf("º¸À¯ÇÑ ÀÚ±ÝÀ» %d¸¸¿ø¸¸Å­ ÃÊ°úÇÏ¿´½À´Ï´Ù.\n", abs(ex));
+                printf("ë³´ìœ í•œ ìžê¸ˆì„ %dë§Œì›ë§Œí¼ ì´ˆê³¼í•˜ì˜€ìŠµë‹ˆë‹¤.\n", abs(ex));
                 if (ex_m < 5)
                 {
-                    printf("ÇöÀç ÀÜµ·Àº %d¸¸¿øÀÌ¸ç, Ã»¼Ò±â´Â ±¸¸ÅÇÒ ¼ö ¾ø½À´Ï´Ù.", ex_m);
+                    printf("í˜„ìž¬ ìž”ëˆì€ %dë§Œì›ì´ë©°, ì²­ì†Œê¸°ëŠ” êµ¬ë§¤í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.", ex_m);
                 }
                 else
                 {
-                    printf("ÇöÀç ÀÜµ·Àº %d¸¸¿øÀÌ¸ç, Ã»¼Ò±â´Â %d ÀÌÇÏ·Î ±¸¸ÅÇÒ ¼ö ÀÖ½À´Ï´Ù.", ex_m, ex_m / 5);
+                    printf("í˜„ìž¬ ìž”ëˆì€ %dë§Œì›ì´ë©°, ì²­ì†Œê¸°ëŠ” %d ì´í•˜ë¡œ êµ¬ë§¤í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.", ex_m, ex_m / 5);
                 }
             }
             else
             {
-                printf("ÀÜµ·Àº %d¸¸¿ø ÀÔ´Ï´Ù.\n", ex);
+                printf("ìž”ëˆì€ %dë§Œì› ìž…ë‹ˆë‹¤.\n", ex);
                 lot_num += n * 2;
             }
 
@@ -147,7 +148,7 @@ int main()
         
         case 4:
           
-            printf("\n³»°¡ ±¸¸ÅÇÒ ¿ÀºìÀÇ °³¼ö´Â? : ");
+            printf("\në‚´ê°€ êµ¬ë§¤í•  ì˜¤ë¸ì˜ ê°œìˆ˜ëŠ”? : ");
             scanf("%d", &n);
 
             ex_m = ex;
@@ -155,19 +156,19 @@ int main()
 
             if (ex < 0)
             {
-                printf("º¸À¯ÇÑ ÀÚ±ÝÀ» %d¸¸¿ø¸¸Å­ ÃÊ°úÇÏ¿´½À´Ï´Ù.\n", abs(ex));
+                printf("ë³´ìœ í•œ ìžê¸ˆì„ %dë§Œì›ë§Œí¼ ì´ˆê³¼í•˜ì˜€ìŠµë‹ˆë‹¤.\n", abs(ex));
                 if (ex_m < 1)
                 {
-                    printf("ÇöÀç ÀÜµ·Àº %d¸¸¿øÀÌ¸ç, ¿ÀºìÀº ±¸¸ÅÇÒ ¼ö ¾ø½À´Ï´Ù.", ex_m);
+                    printf("í˜„ìž¬ ìž”ëˆì€ %dë§Œì›ì´ë©°, ì˜¤ë¸ì€ êµ¬ë§¤í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.", ex_m);
                 }
                 else
                 {
-                    printf("ÇöÀç ÀÜµ·Àº %d¸¸¿øÀÌ¸ç, ¿ÀºìÀº %d ÀÌÇÏ·Î ±¸¸ÅÇÒ ¼ö ÀÖ½À´Ï´Ù.", ex_m, ex_m / 1);
+                    printf("í˜„ìž¬ ìž”ëˆì€ %dë§Œì›ì´ë©°, ì˜¤ë¸ì€ %d ì´í•˜ë¡œ êµ¬ë§¤í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.", ex_m, ex_m / 1);
                 }
             }
             else
             {
-                printf("ÀÜµ·Àº %d¸¸¿ø ÀÔ´Ï´Ù.\n", ex);
+                printf("ìž”ëˆì€ %dë§Œì› ìž…ë‹ˆë‹¤.\n", ex);
                 lot_num += n * 1;
             }
 
@@ -175,13 +176,13 @@ int main()
         
         case 5:
             
-            printf("\n´õ ÀÌ»ó ¹°°ÇÀ» »çÁö ¾Ê½À´Ï´Ù.");
+            printf("\në” ì´ìƒ ë¬¼ê±´ì„ ì‚¬ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 
             break;
             
         default:
             
-            printf("\nÀß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù. ´Ù½Ã ¼±ÅÃÇØÁÖ¼¼¿ä,\n");
+            printf("\nìž˜ëª»ëœ ì„ íƒìž…ë‹ˆë‹¤. ë‹¤ì‹œ ì„ íƒí•´ì£¼ì„¸ìš”,\n");
 
             break;
             
@@ -189,21 +190,21 @@ int main()
     }
    
 
-    //  5.±¸ÀÔÀ» ¸ØÃá´Ù ¼±ÅÃ ½Ã "´õ ÀÌ»ó ¹°°ÇÀ» »çÁö ¾Ê½À´Ï´Ù", "°æÇ° ÀÀ¸ð¸¦ ½ÃÀÛÇÕ´Ï´Ù" Ãâ·Â ÀÌÈÄ "°æÇ° ÀÀ¸ð ´Ü°è"·Î ³Ñ¾î°¨
+    //  5.êµ¬ìž…ì„ ë©ˆì¶˜ë‹¤ ì„ íƒ ì‹œ "ë” ì´ìƒ ë¬¼ê±´ì„ ì‚¬ì§€ ì•ŠìŠµë‹ˆë‹¤", "ê²½í’ˆ ì‘ëª¨ë¥¼ ì‹œìž‘í•©ë‹ˆë‹¤" ì¶œë ¥ ì´í›„ "ê²½í’ˆ ì‘ëª¨ ë‹¨ê³„"ë¡œ ë„˜ì–´ê°
 
-    //  1~5 ¿ÜÀÇ ¸Þ´º  ¼±ÅÃ ½Ã "Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù. ´Ù½Ã ¼±ÅÃÇØÁÖ¼¼¿ä" Ãâ·Â ÈÄ ´Ù½Ã "¹°°Ç ±¸ÀÔ ¸Þ´º" Ãâ·Â
-
-
+    //  1~5 ì™¸ì˜ ë©”ë‰´  ì„ íƒ ì‹œ "ìž˜ëª»ëœ ì„ íƒìž…ë‹ˆë‹¤. ë‹¤ì‹œ ì„ íƒí•´ì£¼ì„¸ìš”" ì¶œë ¥ í›„ ë‹¤ì‹œ "ë¬¼ê±´ êµ¬ìž… ë©”ë‰´" ì¶œë ¥
 
 
 
 
 
 
-    //  "°æÇ° ÀÀ¸ð ´Ü°è"
-    printf("\n°æÇ° ÀÀ¸ð¸¦ ½ÃÀÛÇÕ´Ï´Ù.\n");
-    // "³» ÀÀ¸ð ±âÈ¸´Â : %d" Ãâ·Â
-    printf("\n³» ÀÀ¸ð ±âÈ¸´Â: %d",lot_num);
+
+
+    //  "ê²½í’ˆ ì‘ëª¨ ë‹¨ê³„"
+    printf("\nê²½í’ˆ ì‘ëª¨ë¥¼ ì‹œìž‘í•©ë‹ˆë‹¤.\n");
+    // "ë‚´ ì‘ëª¨ ê¸°íšŒëŠ” : %d" ì¶œë ¥
+    printf("\në‚´ ì‘ëª¨ ê¸°íšŒëŠ”: %d",lot_num);
 
     int i;
     int xd[100] = { 0 };
@@ -216,13 +217,13 @@ int main()
             temp = rand() % 100 + 1;
             ret = check_duplicate(xd, i, temp);
         } while (ret == 1);
-        //Áßº¹µÇÁö ¾ÊÀ¸¸é ÀÔ·Â
+        //ì¤‘ë³µë˜ì§€ ì•Šìœ¼ë©´ ìž…ë ¥
         xd[i] = temp;
     }
-    printf("\n°æÇ° ÀÀ¸ð ¹øÈ£´Â : ");
+    printf("\nê²½í’ˆ ì‘ëª¨ ë²ˆí˜¸ëŠ” : ");
     for (i = 0; i < lot_num; i++) 
     {
-        printf(" %d", xd[i]);  //  Áßº¹µÇÁö ¾Ê´Â ·£´ý °æÇ° ÀÀ¸ð ¹øÈ£ Ãâ·Â
+        printf(" %d", xd[i]);  //  ì¤‘ë³µë˜ì§€ ì•ŠëŠ” ëžœë¤ ê²½í’ˆ ì‘ëª¨ ë²ˆí˜¸ ì¶œë ¥
     }
 
     int td[10] = { 0 };
@@ -233,16 +234,16 @@ int main()
             temp = rand() % 100 + 1;
             ret = check_duplicate(td, i, temp);
         } while (ret == 1);
-        //Áßº¹µÇÁö ¾ÊÀ¸¸é ÀÔ·Â
+        //ì¤‘ë³µë˜ì§€ ì•Šìœ¼ë©´ ìž…ë ¥
         td[i] = temp;
     }
-    printf("\n°æÇ° ´çÃ· ¹øÈ£´Â :");
+    printf("\nê²½í’ˆ ë‹¹ì²¨ ë²ˆí˜¸ëŠ” :");
     for (i = 0; i < 10; i++)
     {
-        printf(" %d", td[i]);  // Áßº¹µÇÁö ¾Ê´Â ·£´ý °æÇ° ´çÃ· ¹øÈ£ Ãâ·Â
+        printf(" %d", td[i]);  // ì¤‘ë³µë˜ì§€ ì•ŠëŠ” ëžœë¤ ê²½í’ˆ ë‹¹ì²¨ ë²ˆí˜¸ ì¶œë ¥
     }
 
-    //  "ÀÏÄ¡ÇÏ´Â ¹øÈ£ °³¼ö: %d°³" Ãâ·Â
+    //  "ì¼ì¹˜í•˜ëŠ” ë²ˆí˜¸ ê°œìˆ˜: %dê°œ" ì¶œë ¥
     int win_cou = 0;
     for(i = 0; i < lot_num; i++)
     {
@@ -252,53 +253,53 @@ int main()
             win_cou += 1;
         }
     }
-    printf("\nÀÏÄ¡µÇ´Â ¹øÈ£ °³¼ö: %d°³\n", win_cou);
+    printf("\nì¼ì¹˜ë˜ëŠ” ë²ˆí˜¸ ê°œìˆ˜: %dê°œ\n", win_cou);
     
-    //  "´ç½ÅÀÇ µî¼ö: %dµî" Ãâ·Â
+    //  "ë‹¹ì‹ ì˜ ë“±ìˆ˜: %dë“±" ì¶œë ¥
     /*
     if (win_cou == 10) 
     {
-        printf("´ç½ÅÀÇ µî¼ö: 1µî");
+        printf("ë‹¹ì‹ ì˜ ë“±ìˆ˜: 1ë“±");
     }
     else if (win_cou <= 9 && win_cou >= 7) 
     {
-        printf("´ç½ÅÀÇ µî¼ö: 2µî");
+        printf("ë‹¹ì‹ ì˜ ë“±ìˆ˜: 2ë“±");
     }
     else if (win_cou <= 6 && win_cou >= 5)
     {
-        printf("´ç½ÅÀÇ µî¼ö: 3µî");
+        printf("ë‹¹ì‹ ì˜ ë“±ìˆ˜: 3ë“±");
     }
     else if (win_cou <= 4 && win_cou >= 2)
     {
-        printf("´ç½ÅÀÇ µî¼ö: 4µî");
+        printf("ë‹¹ì‹ ì˜ ë“±ìˆ˜: 4ë“±");
     }
     else
     {
-        printf("´ç½ÅÀÇ µî¼ö: 5µî");
+        printf("ë‹¹ì‹ ì˜ ë“±ìˆ˜: 5ë“±");
     }
     */
     switch (win_cou) 
     {
     case 10:
-        printf("´ç½ÅÀÇ µî¼ö: 1µî");
+        printf("ë‹¹ì‹ ì˜ ë“±ìˆ˜: 1ë“±");
         break;
     case 9:
     case 8:
     case 7:
-        printf("´ç½ÅÀÇ µî¼ö: 2µî");
+        printf("ë‹¹ì‹ ì˜ ë“±ìˆ˜: 2ë“±");
         break;
     case 6:
     case 5:
-        printf("´ç½ÅÀÇ µî¼ö: 3µî");
+        printf("ë‹¹ì‹ ì˜ ë“±ìˆ˜: 3ë“±");
         break;
     case 4:
     case 3:
     case 2:
-        printf("´ç½ÅÀÇ µî¼ö: 4µî");
+        printf("ë‹¹ì‹ ì˜ ë“±ìˆ˜: 4ë“±");
         break;
     case 1:
     case 0:
-        printf("´ç½ÅÀÇ µî¼ö: 5µî");
+        printf("ë‹¹ì‹ ì˜ ë“±ìˆ˜: 5ë“±");
         break;
     }
     return 0;
